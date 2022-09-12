@@ -4,52 +4,57 @@ const euWestpingBtn = document.getElementById('euWest')
 const euSouthpingBtn = document.getElementById('euSouth')
 const londonpingBtn = document.getElementById('london')
 const showPing = document.querySelector('p')
-
+let intervalID ;
 function bahrainPingTest(){
-  setInterval(function(){
-    pingTest('GET','https://dynamodb.me-south-1.amazonaws.com')
+  clearInterval(intervalID)
+  intervalID = setInterval(function(){
+    pingTest('GET','https://dynamodb.me-south-1.amazonaws.com','bahrain Ping: ')
         
     },1000)
 }
 function germanPingTets(){
-  setInterval(function(){
-    pingTest('GET','https://dynamodb.eu-central-1.amazonaws.com')
-        
-    },1000)
+  clearInterval(intervalID)
+  intervalID = setInterval(function(){
+    pingTest('GET','https://dynamodb.eu-central-1.amazonaws.com','euCentral Ping:')
+    
+  },1000)
 }
 function euWestPingTets(){
-  setInterval(function(){
-    pingTest('GET','https://dynamodb.eu-west-1.amazonaws.com')
-        
-    },1000)
+  clearInterval(intervalID)
+  intervalID = setInterval(function(){
+    pingTest('GET','https://dynamodb.eu-west-1.amazonaws.com','euWest Ping: ')
+    
+  },1000)
 }
 function euSouthPingTets(){
-  setInterval(function(){
-    pingTest('GET','https://dynamodb.eu-south-1.amazonaws.com')
-        
-    },1000)
+  clearInterval(intervalID)
+  intervalID = setInterval(function(){
+    pingTest('GET','https://dynamodb.eu-south-1.amazonaws.com','euSouth Ping: ')
+    
+  },1000)
 }
 function londonPingTets(){
-  setInterval(function(){
-    pingTest('GET','https://dynamodb.eu-west-2.amazonaws.com')
-        
-    },1000)
+  clearInterval(intervalID)
+  intervalID = setInterval(function(){
+    pingTest('GET','https://dynamodb.eu-west-2.amazonaws.com','euWest2 Ping: ')
+    
+  },1000)
 }
 
-function pingTest(method,url){
+function pingTest(method,url,serverName){
   let xhttp = new XMLHttpRequest()
   xhttp.open(method,url)
   let clickDate = new Date().getTime()
   xhttp.onload = function(){
       let responeTime = new Date().getTime()
       let pingRes = (responeTime - clickDate) - 20
-      showPing.innerHTML = pingRes
+      showPing.innerHTML = `${serverName}`+pingRes
   }
   xhttp.send()
 }
 bahrainPingBtn.addEventListener('click',bahrainPingTest)
 germanPingBth.addEventListener('click',germanPingTets)    
-germanPingBth.addEventListener('click',euWestPingTets)    
-germanPingBth.addEventListener('click',euSouthPingTets)    
-germanPingBth.addEventListener('click',londonPingTets)   
+euWestpingBtn.addEventListener('click',euWestPingTets)    
+euSouthpingBtn.addEventListener('click',euSouthPingTets)    
+londonpingBtn.addEventListener('click',londonPingTets)   
  
