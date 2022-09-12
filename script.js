@@ -44,7 +44,6 @@ function pingTest(method,url){
       let responeTime = new Date().getTime()
       let pingRes = (responeTime - clickDate) - 20
       showPing.innerHTML = pingRes
-      console.log(pingRes);
   }
   xhttp.send()
 }
