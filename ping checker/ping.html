@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+  <button>ping Test</button>
+  <br><br> 
+  <p>show ping</p>
+  <script>
+  const pingBtn = document.querySelector('button')
+  const showPing = document.querySelector('p')
+    setInterval(function(){
+      let xhttp = new XMLHttpRequest()
+      xhttp.open('GET','https://dynamodb.me-south-1.amazonaws.com')
+      let clickDate = new Date().getTime()
+      xhttp.onload = function(){
+          let responeTime = new Date().getTime()
+          let pingRes = (responeTime - clickDate) - 20
+          showPing.innerHTML = pingRes
+          console.log(pingRes);
+      }
+      xhttp.send()
+          
+      },1000)
+
+  
+   
+   </script>
+</body>
+</html>
