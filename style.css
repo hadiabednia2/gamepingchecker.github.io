@@ -13,11 +13,12 @@ body{
 }
 .navbar{
   display: flex;
-  height: 45vh;
+  height: 35vh;
   background-color:antiquewhite ;
   justify-content: flex-end;
   padding: 30px;
   background: url(./img/header.png) center/cover;
+  
 }
 .navbar ul{
   list-style: none;
@@ -38,34 +39,36 @@ section{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 55vh;
+  height: 65vh;
   background-color: transparent;
   align-items: flex-end;
+  background-color: transparent;
 }
 #apexLegends{
-  height: 550px;
-  width: 450px;
+  height: 650px;
+  width: 550px;
   z-index: -10;
 }
 #valorant{
-  height: 400px;
-  width: 650px;
+  height: 450px;
+  width: 750px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   z-index: -10;
+  opacity: 80%;
 }
 #pubg{
   position: absolute;
   right: -20px;
-  height: 400px;
-  width: 450px;
+  height: 500px;
+  width: 550px;
   z-index: -10;
 }
 section .wrapper{
   height: 50vh;
   display: flex;
-  width: 50%;
+  width: 80%;
   align-items: flex-end;
   flex-direction: column;
   padding:0 12rem 6rem 0;
@@ -81,17 +84,18 @@ section .wrapper .detail{
 
 }
 section .wrapper div:nth-child(1){
-  
-  font-size: 4rem;
+  margin-right: 3rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   color: #fff;
   font-weight: 600;
 }
 section .wrapper div:nth-child(2){
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 2px;
-
+  margin-right: 2rem;
+  margin-top: 1rem;
 }
 .wrapper .detail #browsGameBtn{
   height: 4.5rem;
