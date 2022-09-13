@@ -1,15 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins,sans-serif;
+  
+}
 body{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
-  button{
-    width: 300px;
-    height: 30px;
-    margin-top: 10px;
-  }
-  div{
-    display: flex;
-    flex-direction: column;
-  }
+  background-color:#152E4D ;
+  height: 100vh;
+  overflow-x: hidden;
+
+}
+.navbar{
+  display: flex;
+  height: 45vh;
+  background-color:antiquewhite ;
+  justify-content: flex-end;
+  padding: 30px;
+  background: url(./img/header.png) center/cover;
+}
+.navbar ul{
+  list-style: none;
+  font-size: 0;
+}
+.navbar ul li{
+  display: inline-block;
+  margin: 10px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 55vh;
+  background-color: transparent;
+  align-items: flex-end;
+}
+#apexLegends{
+  height: 600px;
+  width: 500px;
+  z-index: -10;
+}
+#valorant{
+  height: 400px;
+  width: 650px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+#pubg{
+  position: absolute;
+  right: -20px;
+  height: 450px;
+  width: 500px;
+  z-index: -10;
+}
+section .wrapper{
+  height: 50vh;
+  display: flex;
+  width: 50%;
+  align-items: flex-end;
+  flex-direction: column;
+  padding:0 12rem 6rem 0;
+  margin-bottom: 2rem;
+
+}
+
+section .wrapper .detail{
+  color: #fff;
+  height: 100%;
+  margin-left: 1rem;
+  text-align: center;
+
+}
+section .wrapper div:nth-child(1){
+  
+  font-size: 4rem;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 600;
+}
+section .wrapper div:nth-child(2){
+  font-size: 2.3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+}
+.wrapper .detail #browsGameBtn{
+  height: 4.5rem;
+  width: 20rem;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1C5FDF;
+  cursor: pointer;
+  transition: all 300ms;
+  margin-right: 3rem;
+}
+.wrapper .detail #browsGameBtn:hover{
+  background-color: #1552c3;
+  color: rgb(206, 204, 204);
+  
+}
+section .wrapper .detail .title{
+  font-size: 2.2rem;
+  
+}
