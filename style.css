@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins,sans-serif;
-  
+
 }
 body{
   background-color:#152E4D ;
@@ -43,8 +43,8 @@ section{
   align-items: flex-end;
 }
 #apexLegends{
-  height: 600px;
-  width: 500px;
+  height: 550px;
+  width: 450px;
   z-index: -10;
 }
 #valorant{
@@ -58,8 +58,8 @@ section{
 #pubg{
   position: absolute;
   right: -20px;
-  height: 450px;
-  width: 500px;
+  height: 400px;
+  width: 450px;
   z-index: -10;
 }
 section .wrapper{
