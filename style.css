@@ -224,13 +224,31 @@ section .wrapper #browsGameBtn:hover::before{
     margin-bottom: 2rem;
   }
   
+}
+@media only screen  and (max-width:516px){
+  section .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    margin-bottom: 2rem;
+  }
   section .wrapper .firtstTitle{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   section .wrapper .secondTitle{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #fff;
     margin-bottom: 1rem;
+  }
+  section .wrapper #browsGameBtn{
+    height: 50px;
+    width: 200px;
+
+    font-size: 1rem;
   }
 }
