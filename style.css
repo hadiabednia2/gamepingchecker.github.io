@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins,sans-serif,'bykan';
   overflow: hidden;
+}
+@font-face {
+  font-family: 'bykan';
+  src: url(./fonts/Bykan/yekan1-webfont.woff2) format("woff2"),url(./fonts/Bykan/yekan1-webfont.woff) format("woff");
 }
 body{
   background-color:#152E4D ;
