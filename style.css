@@ -186,6 +186,9 @@ section .wrapper #browsGameBtn:hover::before{
   }
 }
 @media only screen  and (max-width:568px){
+  header{
+    height: 190px;
+  }
   section .wrapper{
     top: 0;
     left: 30%;
@@ -207,6 +210,9 @@ section .wrapper #browsGameBtn:hover::before{
   }
 }
 @media only screen  and (max-width:410px){
+  header{
+    height: 153px;
+  }
   section .wrapper{
     top: 0;
     left: 30%;
