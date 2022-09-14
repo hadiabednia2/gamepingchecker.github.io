@@ -10,16 +10,16 @@ body{
 }
 
 header{
- height: 250px; 
+ height: 250px;
 }
 .navbar{
   display: flex;
   height: 100%;
- 
+
   justify-content: flex-end;
   padding: 30px;
   background: url(./img/header.png) center/cover;
-  
+
 }
 .navbar ul{
   list-style: none;
@@ -42,7 +42,7 @@ section{
   height: 460px;
   position: relative;
   align-items: flex-end;
-  
+
 }
 section .img{
   height: 100%;
@@ -107,7 +107,7 @@ section .wrapper #browsGameBtn::before{
   top: 0;
   transition: all 300ms;
   opacity: 0;
-} 
+}
 /* section .wrapper #browsGameBtn::before:hover{
   background-color: red;
 } */
@@ -140,16 +140,16 @@ section .wrapper #browsGameBtn:hover::before{
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 40%;
+    top: 10%;
     left: 35%;
-  
+
   }
   section{
     margin-top: 2rem;
     display: flex;
     justify-content:space-between;
     height: 460px;
-    align-items: flex-end;    
+    align-items: flex-end;
   }
   section #valorant{
     margin: 0;
@@ -166,12 +166,7 @@ section .wrapper #browsGameBtn:hover::before{
 }
 @media only screen  and (max-width:918px){
   section .wrapper{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: 40%;
+    top: 10%;
     left: 30%;
   }
   section #valorant{
@@ -184,9 +179,9 @@ section .wrapper #browsGameBtn:hover::before{
 }
 @media only screen  and (max-width:648px){
   section .wrapper{
-    top: 40%;
+    top: 10%;
     left: 40%;
-  
+
   }
   section #pubg{
     display: none;
@@ -194,8 +189,8 @@ section .wrapper #browsGameBtn:hover::before{
 }
 @media only screen  and (max-width:568px){
   section .wrapper{
-    top: 40%;
-    left: 45%;
+    top: 10%;
+    left: 30%;
   }
   section .wrapper .firtstTitle{
     font-size: 2.5rem;
@@ -212,12 +207,6 @@ section .wrapper #browsGameBtn:hover::before{
 
     font-size: 1.1rem;
   }
-}
-@media only screen  and (max-width:516px){
-  section .wrapper{
-    left: 30%;
-  }
-  
 }
 @media only screen  and (max-width:410px){
   section .wrapper{
@@ -238,14 +227,8 @@ section .wrapper #browsGameBtn:hover::before{
 }
 @media only screen  and (max-width:328px){
   section .wrapper{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: 40%;
+    top: 10%;
     left: 10%;
-    margin-bottom: 2rem;
   }
   section #valorant{
     margin: 0;
@@ -259,7 +242,7 @@ section .wrapper #browsGameBtn:hover::before{
   }
   section .wrapper #browsGameBtn{
     height: 50px;
-    width: 170px;
+    width: 190px;
     font-size: 1rem;
     margin-left: 5rem;
   }
