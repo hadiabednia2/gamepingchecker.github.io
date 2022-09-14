@@ -35,6 +35,9 @@ header{
   font-size: 1.3rem;
   color: #fff;
 }
+.navbar .list-menu{
+  display: none;
+}
 section{
   margin-top: 2rem;
   display: flex;
@@ -206,7 +209,59 @@ section .wrapper #browsGameBtn:hover::before{
     font-size: 1.1rem;
   }
 }
+.items{
+  display: none;
+}
 @media screen  and (max-width:410px){
+  .navbar ul{
+    display: none;
+  }
+  .items ul{
+    display: block;
+  }
+  .items .fa-xmark{
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    right: 35px;
+  }
+  .items ul li{
+    display: inline-block ;
+    margin-left: 15px;
+  }
+  .items ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  .navbar .list-menu{
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    height: 43px;
+    cursor: pointer;
+  }
+  body{
+    position: relative;
+
+  }
+  .items{
+    padding-top: 1rem;
+    position: absolute;
+    height:10%;
+    width:90%;
+    background-color: #4834d4;
+    opacity: 90%;
+    top: 15px;
+    right: 0;
+    z-index: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: all 300ms;
+    display: none;
+  }
   header{
     height: 153px;
   }
