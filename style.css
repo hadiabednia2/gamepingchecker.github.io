@@ -195,7 +195,7 @@ section .wrapper #browsGameBtn:hover::before{
 
   }
   section{
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
     justify-content:space-between;
     height: 460px;
@@ -274,26 +274,26 @@ section .wrapper #browsGameBtn:hover::before{
   }
   .items ul{
     display: block;
-    padding-top: 2rem;
+    margin-top: 2rem;
   }
   .items .fa-xmark{
     color: #fff;
     font-size: 2rem;
     position: absolute;
-    right: 35px;
+    right: 30px;
     cursor: pointer;
+
   }
   .items ul li{
     display: block ;
     margin-left: 15px;
     padding-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
     height: 50px;
-    background-color: rgba(0,0,0,0.3);
 
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    width: 80%;
+    border-radius: 20px;
   }
   .items ul li a{
     text-decoration: none;
@@ -315,10 +315,11 @@ section .wrapper #browsGameBtn:hover::before{
   .items{
     padding-top: 1rem;
     position: absolute;
-    height:40%;
-    width:90%;
+    height:100%;
+    width:50%;
+    opacity: 90%;
     background-color: #4834d4;
-    top: 15px;
+    top: 0;
     right: 0;
     z-index: 1;
     border-top-left-radius: 20px;
@@ -348,6 +349,9 @@ section .wrapper #browsGameBtn:hover::before{
   }
 }
 @media screen  and (max-width:328px){
+  section{
+    margin-top: 4rem;
+  }
   section .wrapper{
     top: 0;
     left: 0;
@@ -357,10 +361,10 @@ section .wrapper #browsGameBtn:hover::before{
     margin-left: 0;
   }
   section #valorant{
-    margin: 0;
     height: 350px;
     min-width: 200px;
     margin-right:18rem;
+    margin-top: 2rem;
   }
   section .wrapper .secondTitle{
     font-size: 1.2rem;
