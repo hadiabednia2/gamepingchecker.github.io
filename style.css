@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins,sans-serif,'bykan';
-  overflow: hidden;
+
+}
+html{
+  scroll-behavior: smooth;
 }
 @font-face {
   font-family: 'bykan';
@@ -101,6 +104,11 @@ section .wrapper #browsGameBtn{
   opacity: 90%;
   transition: 300ms;
   position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding-top: 0.6rem;
 }
 body {
   background:#0b1d2a;
@@ -165,6 +173,7 @@ section .wrapper #browsGameBtn::before{
   top: 0;
   transition: all 300ms;
   opacity: 0;
+
 }
 section .wrapper #browsGameBtn:hover::before{
   background-color: #4834d4;

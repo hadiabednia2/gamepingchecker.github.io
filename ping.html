@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./page2 style.css">
 </head>
 <body>
     <div class="items">
@@ -32,7 +33,7 @@
         </div>
      </header>
 
-     <section>
+    <section>
          <div class="wrapper">
             <div class="firtstTitle">
               <p>Test Your Ping</p>
@@ -41,7 +42,8 @@
                 <p class="secondTitle">Before Start Playing</p>
             </div>
             <div class="detail">
-                <button id="browsGameBtn">Browse Your Game</button>
+                <a href="#gameLists" id="browsGameBtn">Browse Your Game</a>
+
                 <svg class="arrows">
                     <path class="a1" d="M0 0 L30 32 L60 0"></path>
                     <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -49,6 +51,7 @@
                   </svg>
             </div>
         </div>
+
         <div class="img">
             <img src="./img/apexLegends.png" alt="" id="apexLegends" >
         </div>
@@ -58,6 +61,10 @@
         <div class="img" id="pubg">
             <img src="./img/pubg.png" alt="" id="pubg" >
         </div>
+    </section>
+    <div class="gameListContainer" id="gameLists">
+        <div class="gameLists"></div>
+    </div>
    <script src="./script.js"></script>
  </div>
 </body>
