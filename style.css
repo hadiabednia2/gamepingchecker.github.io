@@ -305,7 +305,7 @@ section .wrapper #browsGameBtn:hover::before{
   }
   .items ul{
     display: block;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
   .items .fa-xmark{
     color: #fff;
@@ -318,13 +318,20 @@ section .wrapper #browsGameBtn:hover::before{
   .items ul li{
     display: block ;
     margin-left: 15px;
-    padding-top: 10px;
+    padding-top: 7px;
     margin-bottom: 20px;
     text-align: center;
     height: 50px;
 
+    box-shadow: 0 3px rgba(0,0,0,0.3);
     width: 80%;
     border-radius: 20px;
+    transition: all 300ms;
+    cursor: pointer;
+  }
+  .items ul li:hover{
+    background-color: #3f2ea9;
+    border: none;
   }
   .items ul li a{
     text-decoration: none;
@@ -337,7 +344,7 @@ section .wrapper #browsGameBtn:hover::before{
     font-size: 2rem;
     color: #fff;
     height: 43px;
-    cursor: pointer;
+
   }
   body{
     position: relative;
@@ -348,7 +355,7 @@ section .wrapper #browsGameBtn:hover::before{
     position: absolute;
     height:100%;
     width:50%;
-    opacity: 90%;
+    opacity: 95%;
     background-color: #4834d4;
     top: 0;
     right: 0;
