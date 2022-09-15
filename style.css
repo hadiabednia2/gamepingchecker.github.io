@@ -318,11 +318,10 @@ section .wrapper #browsGameBtn:hover::before{
   .items ul li{
     display: block ;
     margin-left: 15px;
-    padding-top: 7px;
+    padding-top: 10px;
     margin-bottom: 20px;
     text-align: center;
     height: 50px;
-
     box-shadow: 0 3px rgba(0,0,0,0.3);
     width: 80%;
     border-radius: 20px;
@@ -335,7 +334,7 @@ section .wrapper #browsGameBtn:hover::before{
   }
   .items ul li a{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #fff;
   }
