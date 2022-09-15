@@ -91,7 +91,7 @@ margin-top: 1rem;
   margin-bottom: 1rem;
 }
 section .wrapper #browsGameBtn{
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   margin-bottom: 12rem;
   height: 60px;
   width: 300px;
@@ -184,6 +184,7 @@ section .wrapper #browsGameBtn:hover::before{
   border-radius: 0;
   opacity: 100%;
 }
+
 @media screen  and (max-width:1308px){
   section #valorant{
     margin: 0;
