@@ -248,6 +248,10 @@ section .wrapper #browsGameBtn:hover::before{
     left: 40%;
 
   }
+  .games{
+    margin-left: 0;
+
+}
   section #pubg{
     display: none;
   }
