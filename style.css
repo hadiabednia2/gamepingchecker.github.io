@@ -58,6 +58,7 @@ section .img{
   height: 100%;
   display: flex;
   align-items: flex-end;
+  width: 100%;
 }
 section img{
  height: 100%;
@@ -201,6 +202,10 @@ section .wrapper #browsGameBtn:hover::before{
   section .wrapper{
     top: 0;
     left: 35%;
+
+  }
+  .gameListContainer{
+    height: 250vh;
 
   }
   section{
