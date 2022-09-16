@@ -96,6 +96,6 @@ window.addEventListener('resize',function(){
   }
 })
 gameListArray.forEach(function(game){
-  gameListContainer.insertAdjacentHTML('beforeend','<div class="games"><div class="imgContainer"><img src="'+game.img+'" alt="'+game.alt+'"></div><div class="desc"><p>See '+game.name+' ping</p></div></div>')
+  gameListContainer.insertAdjacentHTML('beforeend','<div class="games"><div class="imgContainer"><img src="'+game.img+'" alt="'+game.alt+'"></div><div class="desc"><a href ="ping.html">See '+game.name+' ping</a></div></div>')
 })
-
+// /?id='+game.id+'

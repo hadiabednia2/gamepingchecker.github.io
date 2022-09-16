@@ -60,6 +60,10 @@ header{
   font-size: 1.3rem;
   color: #fff;
 }
+a{
+  text-decoration: none;
+  color: #f1f1f1;
+}
 .navbar .list-menu{
   display: none;
 }
@@ -445,4 +449,5 @@ section .wrapper #browsGameBtn:hover::before{
 ::-webkit-scrollbar-thumb {
   background: #2950de;
   border-radius: 10px;
+
 }
