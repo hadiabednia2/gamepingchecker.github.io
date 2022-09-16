@@ -79,7 +79,6 @@ let gameListArray = [{
   {id:14,name:'clash Royal',img:'./gameimg/clashRoyal.jpeg',alt:'clashRoyal'},
   {id:15,name:'call of mobile',img:'./gameimg/callofmobile.jpg',alt:'call of mobile'},
   {id:16,name:'mobile legends',img:'./gameimg/mobilelegends.png',alt:'mobile legends'},]
-console.log(opnMenuBtn);
 function openMenu(){
   console.log('hello');
   navbarBox.style.display = 'block'
