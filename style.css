@@ -133,7 +133,7 @@ section .wrapper #browsGameBtn{
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  padding-top: 0.6rem;
+  padding-top: 0.7rem;
 }
 body {
   background:#0b1d2a;
@@ -434,4 +434,15 @@ section .wrapper #browsGameBtn:hover::before{
     font-size: 1rem;
     margin-left: 5rem;
   }
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2950de;
+  border-radius: 10px;
 }
