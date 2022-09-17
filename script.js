@@ -38,7 +38,6 @@ window.addEventListener('resize',function(){
 gameListArray.forEach(function(game){
   gameListContainer.insertAdjacentHTML('beforeend','<div class="games"><div class="imgContainer"><a href = "ping.html?id='+game.id+'"><img src="'+game.img+'" alt="'+game.alt+'"></a></div><div class="desc"><a href ="ping.html?id='+game.id+'">See '+game.name+' ping</a></div></div>')
 })
-let viewer = 0
 window.onload = function(){
   console.log('stie loaded!');
   viewer++

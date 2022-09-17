@@ -139,6 +139,7 @@ function startPing(){
         minPingElem.innerHTML = minPing;
         maxPingElem.innerHTML = maxPing;
     }
+    averagePing = []
     startPingBtn.innerHTML = 'Start Test'
    }
 }
