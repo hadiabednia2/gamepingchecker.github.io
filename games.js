@@ -74,8 +74,10 @@ function setGaugeValue(gauge, value){
 }
 function startPing(){
    if(!IsPinging){
-    pingNum.innerHTML = 'starting...'
-    pingNum.style.color = '#b4c0be'
+    if(curentServer !=undefined){
+        pingNum.innerHTML = 'connecting...'
+        pingNum.style.color = '#b4c0be'
+    }
     let curentServerData =  serverData.find(function(server){
         return server.id == curentServer
     })
@@ -122,11 +124,13 @@ function startPing(){
     pingBar.style.transform = `rotate(0)`;
     pingNum.style.color = '#fff'
     pingNum.textContent = ''
-    let minPing = Math.min(...averagePing);
-    let maxPing =  Math.max(...averagePing);
-    checkPing(minPing,maxPing)
-    minPingElem.innerHTML = minPing;
-    maxPingElem.innerHTML = maxPing;
+    if(averagePing.length !=0){
+        let minPing = Math.min(...averagePing);
+        let maxPing =  Math.max(...averagePing);
+        checkPing(minPing,maxPing)
+        minPingElem.innerHTML = minPing;
+        maxPingElem.innerHTML = maxPing;
+    }
     startPingBtn.innerHTML = 'Start Test'
    }
 }
