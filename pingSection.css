@@ -6,6 +6,9 @@
 }
 
 .wrapper{
+    background: url(./gameimg/warzone.jpg) center/cover;
+    background-color:#436293;
+    background-blend-mode: multiply;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -17,7 +20,7 @@
     top: 20px;
     left: 20px;
     color: #dfe5e4;
-    font-size: 3rem;
+    font-size: 2rem;
     position: absolute;
     font-weight: 600;
     height: 100px;
@@ -226,11 +229,12 @@
     }
     .gauge__cover{
       font-size: 17px;
+    }
+    #gameName{
+        font-size: 1.4rem;
+    }
   }
-  }
-#gameName{
-    font-size: 1.4rem;
-}
+
 
   @media screen  and (max-width:300px){
     .firstSecotion .ServerListModal ul li{

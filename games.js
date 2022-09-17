@@ -19,7 +19,7 @@ let gameListArray = [{
     id:1,name:'league of legends',img:'./gameimg/leagueOfLegends.jpg',alt:'leagueOfLenegds'},
     {id:2,name:'valorant',img:'./gameimg/valorant.jpg',alt:'valorant'},
     {id:3,name:'dota2',img:'./gameimg/dota2.jpg',alt:'dota2'},
-    {id:4,name:'csgo',img:'./gameimg/csgo.jpg',alt:'csgo'},
+    {id:4,name:'Counter-Strike Global Offensive',img:'./gameimg/csgo.jpg',alt:'csgo'},
     {id:5,name:'pubg mobile',img:'./gameimg/pubgmobile.jpg',alt:'pubgmobile'},
     {id:6,name:'Call of duty warzone',img:'./gameimg/warzone.jpg',alt:'warzone'},
     {id:7,name:'apex legends',img:'./gameimg/apexlegends.jpg',alt:'apexlegends'},
