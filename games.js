@@ -137,9 +137,8 @@ function checkPing(minPing,maxPing){
         maxPingElem.style.color = '#016422'
     }if(minPing>50 && minPing<100){
         minPingElem.style.color = '#1B9946'
-    }if(maxPing>50 && maxPing<100){
-        maxPingElem.style.color = '#1B9946'
-    }if(maxPing>200){
+    }
+    if(maxPing>200){
         maxPingElem.style.color = '#C60634'
     }if(minPing > 200){
         minPingElem.style.color = '#C60634'
@@ -149,6 +148,8 @@ function checkPing(minPing,maxPing){
         maxPingElem.style.color = '#A3CB38'
     }if(maxPing<200 && maxPing > 150){
         maxPingElem.style.color = '#e55039'
+    }if(minPing>150 && minPing<200){
+        minPingElem.style.color = '#e55039'
     }
 }
 function showServerLists(){
