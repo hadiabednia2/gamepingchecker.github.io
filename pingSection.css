@@ -5,23 +5,21 @@
     font-family: Poppins,"sans-serif";
 }
 .wrapper{
-    background: url(./gameimg/warzone.jpg) center/cover ;
-    background-blend-mode: multiply;
-    background-color: #436293;
     width: 100%;
-    position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #gameName{
-    top: 0;
+    position: relative;
+    top: 20px;
     left: 20px;
-    color: #fff;
-    font-size: 3rem;
+    color: #dfe5e4;
+    font-size: 2rem;
     position: absolute;
     font-weight: 600;
+    height: 100px;
 }
 .pingBoxContainer{
     width: 700px;
@@ -29,9 +27,8 @@
     border-radius: 30px;
     display: flex;
     overflow: hidden;
-    background: linear-gradient(254.18deg, #32108e 50%,
-     rgba(11, 28, 113, 0.9) 100%);
-
+    background-color: #32108E;
+    opacity: 90%;
 }
 .firstSecotion{
     width: 50%;
@@ -93,7 +90,7 @@
     cursor: pointer;
 }
 .firstSecotion .ServerListModal ul li:hover{
-    background-color: #34188f;
+    background-color: #471184;
     color:#fff;
 }
 .firstSecotion .ServerListModal ul li:nth-child(1){
@@ -124,12 +121,20 @@
     color: #b4c0be;
     margin-bottom: 1rem;
 }
-.secondSection #serverName{
-    font-size: 1rem;
+.secondSection #serverNameBox{
+    font-size: 1.1rem;
     font-weight: 500;
-    color: #b4c0be;
+    color: #cbc7c7;
     margin-bottom: 10px;
-    margin-left: 5rem;
+    margin-left: 2rem;
+}
+#pingsData #MaxPing{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+#pingsData #MinPing{
+    font-weight: 700;
+    font-size: 1.1rem;
 }
 .gauge {
     width: 100%;

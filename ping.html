@@ -19,11 +19,11 @@
                     </div>
                     <div class="ServerListModal remove">
                         <ul>
-                            <li><p>Us East</p></li>
-                            <li><p>Us west</p></li>
-                            <li><p>Eu west</p></li>
-                            <li><p>Eu central</p></li>
-                            <li><p>Midle East</p></li>
+                            <li class="serversBtns" data-id="1"><p>Us East</p></li>
+                            <li class="serversBtns" data-id="2"><p>Us west</p></li>
+                            <li class="serversBtns" data-id="3"><p>Eu west</p></li>
+                            <li class="serversBtns" data-id="4"><p>Eu central</p></li>
+                            <li class="serversBtns" data-id="5"><p>Midle East</p></li>
                         </ul>
                     </div>
                 </div>
@@ -35,11 +35,11 @@
                         </div>
                       </div>
                     <div id="pingsData">
-                        <span>Min ping <span>30</span></span>
-                        <span>Max ping <span>140</span></span>
+                        <span>Min ping <span id="MinPing">0</span></span>
+                        <span>Max ping <span id="MaxPing">0</span></span>
                     </div>
-                    <div id="serverName">
-                        <span>Server Germany,frankfurt</span>
+                    <div id="serverNameBox">
+                        <span>Server <span id="serverName"></span></span>
                     </div>
                 </div>
             </div>

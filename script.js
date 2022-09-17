@@ -79,6 +79,7 @@ let gameListArray = [{
   {id:14,name:'clash Royal',img:'./gameimg/clashRoyal.jpeg',alt:'clashRoyal'},
   {id:15,name:'call of mobile',img:'./gameimg/callofmobile.jpg',alt:'call of mobile'},
   {id:16,name:'mobile legends',img:'./gameimg/mobilelegends.png',alt:'mobile legends'},]
+
 function openMenu(){
   console.log('hello');
   navbarBox.style.display = 'block'
@@ -95,9 +96,9 @@ window.addEventListener('resize',function(){
   }
 })
 gameListArray.forEach(function(game){
-  gameListContainer.insertAdjacentHTML('beforeend','<div class="games"><div class="imgContainer"><img src="'+game.img+'" alt="'+game.alt+'"></div><div class="desc"><a href ="ping.html">See '+game.name+' ping</a></div></div>')
+  gameListContainer.insertAdjacentHTML('beforeend','<div class="games"><div class="imgContainer"><img src="'+game.img+'" alt="'+game.alt+'"></div><div class="desc"><a href ="ping.html?id='+game.id+'">See '+game.name+' ping</a></div></div>')
 })
-// /?id='+game.id+'
+
 window.onload = function(){
   console.log('stie loaded!');
 }
