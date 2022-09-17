@@ -1,14 +1,11 @@
+let searchLocation = location.search
 let searchParam = new URLSearchParams(searchLocation)
 let gameIdParam = searchParam.get('id')
 let IsValidUrl = gameListArray.some(function(game){
-    if(game.id == gameIdParam){
-        return true
-    }
-})
-if(!IsValidUrl){
-    console.log('404');
-    location.href = '/NotFound/404.html'
+if(game.id == gameIdParam){
+    return true
 }
+})
 const gaugeElement = document.querySelector(".gauge");
 const startPingBtn = document.getElementById('startPingBtn')
 const pingNum = document.querySelector(".gauge__cover")
@@ -43,10 +40,13 @@ let gameListArray = [{
     {id:14,name:'clash Royal',img:'./gameimg/clashRoyal.jpeg',alt:'clashRoyal'},
     {id:15,name:'call of mobile',img:'./gameimg/callofmobile.jpg',alt:'call of mobile'},
     {id:16,name:'mobile legends',img:'./gameimg/mobilelegends.png',alt:'mobile legends'},]
+
+if(!IsValidUrl){
+    console.log('404');
+    location.href = '/NotFound/404.html'
+}
 let serverData = []
 let averagePing = []
-let searchLocation = location.search
-
 let game = gameListArray.filter(function(game){
     return game.id == gameIdParam
 })
